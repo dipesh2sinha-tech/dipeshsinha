@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Community — Dipesh Sinha. High-accountability fraternity for men who are done negotiating with themselves.">
+  <title>The Community — Dipesh Sinha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#1a1208;--paper:#f5f0e8;--warm-mid:#8c7355;--accent:#7a3b1e;--rule:#d4c9b0;--sidebar-bg:#ede8dc;--font-display:'Playfair Display',Georgia,serif;--font-body:'Source Serif 4',Georgia,serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.7;min-height:100vh}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{text-align:center;padding:2.5rem 1rem 0;border-bottom:2px solid var(--ink)}
+    .site-logo{display:block;margin:0 auto 0.75rem;height:72px;width:auto}
+    .site-logo-text{font-family:var(--font-display);font-size:2.2rem;font-weight:700;letter-spacing:.03em;color:var(--ink);display:block;margin-bottom:.25rem}
+    .site-tagline{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--warm-mid);margin-bottom:1.5rem}
+    nav{display:flex;justify-content:center;border-top:1px solid var(--rule)}
+    nav a{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);padding:.65rem 1.4rem;border-right:1px solid var(--rule);transition:background .15s}
+    nav a:first-child{border-left:1px solid var(--rule)}
+    nav a:hover,nav a.active{background:var(--sidebar-bg);text-decoration:none}
+    .wrapper{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:220px 1fr 220px}
+    .sidebar{background:var(--sidebar-bg);padding:1.8rem 1.2rem;border-right:1px solid var(--rule)}
+    .sidebar-right{border-right:none;border-left:1px solid var(--rule)}
+    .sidebar-section{margin-bottom:2rem}
+    .sidebar-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--warm-mid);border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin-bottom:1rem;display:block}
+    .about-photo{width:64px;height:64px;border-radius:50%;object-fit:cover;display:block;margin-bottom:.8rem;border:2px solid var(--rule)}
+    .about-photo-placeholder{width:64px;height:64px;border-radius:50%;background:var(--rule);display:flex;align-items:center;justify-content:center;margin-bottom:.8rem;border:2px solid var(--warm-mid);font-size:1.6rem;color:var(--warm-mid)}
+    .sidebar p{font-size:.85rem;color:#3d3120;line-height:1.65}
+    .tip-jar{display:inline-block;margin-top:1rem;padding:.45rem 1rem;border:1px solid var(--accent);color:var(--accent);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;transition:all .15s}
+    .tip-jar:hover{background:var(--accent);color:var(--paper);text-decoration:none}
+    .subscribe-form input[type=email]{width:100%;padding:.55rem .7rem;border:1px solid var(--rule);background:var(--paper);font-family:var(--font-body);font-size:.83rem;color:var(--ink);margin-bottom:.5rem;outline:none}
+    .subscribe-form input[type=email]:focus{border-color:var(--accent)}
+    .subscribe-form button{width:100%;padding:.55rem;background:var(--ink);color:var(--paper);border:none;font-family:var(--font-body);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:background .15s}
+    .subscribe-form button:hover{background:var(--accent)}
+    .subscribe-note{font-size:.72rem;color:var(--warm-mid);margin-top:.5rem;line-height:1.5}
+    main{padding:2.5rem 2.2rem}
+    .page-title{font-family:var(--font-display);font-size:2rem;font-weight:700;line-height:1.2;margin-bottom:.4rem;color:var(--ink)}
+    .page-sub{font-size:.73rem;letter-spacing:.12em;text-transform:uppercase;color:var(--warm-mid);margin-bottom:2rem;display:block}
+    .post-body p{font-size:1.05rem;line-height:1.8;margin-bottom:1.4rem;color:var(--ink)}
+    .post-body h2{font-family:var(--font-display);font-size:1.35rem;font-weight:700;margin:2rem 0 .8rem;color:var(--ink)}
+    .post-body blockquote{border-left:3px solid var(--accent);padding:.5rem 1.2rem;margin:1.5rem 0;color:var(--accent);font-style:italic;font-size:1.05rem}
+    hr.divider{border:none;border-top:2px solid var(--ink);margin:2rem 0}
+    .standards-list{list-style:none;margin:1rem 0 1.5rem}
+    .standards-list li{padding:.7rem 0;border-bottom:1px solid var(--rule);display:flex;gap:.8rem;align-items:flex-start;font-size:.95rem;line-height:1.65}
+    .standards-list li:last-child{border-bottom:none}
+    .standards-list li::before{content:'—';color:var(--accent);font-weight:700;flex-shrink:0;margin-top:.1rem}
+    .who-box{background:var(--sidebar-bg);border:2px solid var(--ink);padding:1.8rem;margin:2rem 0}
+    .who-box h3{font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1rem}
+    .who-box ul{list-style:none}
+    .who-box ul li{padding:.4rem 0;font-size:.93rem;border-bottom:1px solid var(--rule)}
+    .who-box ul li:last-child{border-bottom:none}
+    .who-box ul li::before{content:'✓  ';color:var(--accent);font-weight:700}
+    .apply-box{background:var(--ink);color:var(--paper);padding:2rem;text-align:center;margin-top:2.5rem}
+    .apply-box h3{font-family:var(--font-display);font-size:1.3rem;font-weight:700;margin-bottom:.8rem}
+    .apply-box p{color:#c4b89a;font-size:.9rem;margin-bottom:1.5rem;line-height:1.7}
+    .apply-btn{display:inline-block;background:var(--accent);color:var(--paper);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;padding:.8rem 2rem;transition:background .15s}
+    .apply-btn:hover{background:#5a2a10;text-decoration:none;color:var(--paper)}
+    footer{grid-column:1/-1;border-top:2px solid var(--ink);padding:1.2rem 1rem;display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+    footer a{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--warm-mid)}
+    footer a:hover{color:var(--accent);text-decoration:none}
+    @media(max-width:800px){.wrapper{grid-template-columns:1fr}.sidebar,.sidebar-right{border:none;border-top:1px solid var(--rule);display:flex;gap:2rem;flex-wrap:wrap}.sidebar-section{margin-bottom:0;flex:1;min-width:180px}main{padding:1.5rem 1rem}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="site-logo-text">Dipesh Sinha</span>
+    <p class="site-tagline">Accountability · Ethics · Dignity</p>
+    <nav>
+      <a href="/index.html">Writings</a>
+      <a href="/community.html" class="active">Community</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <p class="sidebar-label">About</p>
+        <div class="about-photo-placeholder">&#9998;</div>
+        <p>Son of a farmer. Builder of men. A community for those who refuse to inherit weakness.</p>
+      </div>
+      <div class="sidebar-section">
+        <p class="sidebar-label">Support the Work</p>
+        <a href="#" class="tip-jar">☕ Leave a Tip</a>
+      </div>
+    </aside>
+
+    <main>
+      <h1 class="page-title">A Fraternity for Men Who Draw The Line</h1>
+      <span class="page-sub">The Community</span>
+
+      <article class="post-body">
+
+        <p>Not a mastermind. Not a WhatsApp group. A high-accountability community for men who are done negotiating with themselves — and ready to hold a standard that most will never meet.</p>
+
+        <h2>What This Is Not</h2>
+        <p>This is not a motivation club. This is not a place where men come to feel good about where they are. This is not a space that tolerates excuses dressed up as explanations.</p>
+
+        <h2>What This Is</h2>
+        <p>A small, private community of men who hold each other to a standard. Men who have built something and still feel the absence of something they cannot name.</p>
+
+        <blockquote>That absence has a name. It is called dignity. And dignity is not given. It is demanded — from yourself, first.</blockquote>
+
+        <hr class="divider">
+
+        <h2>The Standards We Hold</h2>
+        <ul class="standards-list">
+          <li>You keep your word. To others. To yourself. Non-negotiable.</li>
+          <li>You examine your karmic ledger honestly — weekly, not when it is convenient.</li>
+          <li>You do not lower standards to make others comfortable. Including yourself.</li>
+          <li>You face hard truths before they become hard consequences.</li>
+          <li>You contribute. You do not only take. Every member gives and receives in equal measure.</li>
+          <li>Weakness is not a crime. Refusing to face it is.</li>
+        </ul>
+
+        <hr class="divider">
+
+        <div class="who-box">
+          <h3>Who This Is For</h3>
+          <ul>
+            <li>Men who have achieved something and feel the emptiness underneath it</li>
+            <li>Men who are tired of motivation content that fades by Tuesday</li>
+            <li>Men who want to be held to a real standard by real men</li>
+            <li>Men who can handle hard feedback without breaking or retaliating</li>
+            <li>Men who understand that dignity is built, not inherited</li>
+          </ul>
+        </div>
+
+        <div class="apply-box" id="apply">
+          <h3>Join the Community</h3>
+          <p>Community is not open to everyone. It is earned. The joining is simple. The standard is not.</p>
+          <a href="mailto:your@email.com?subject=Community Application" class="apply-btn">Join via Email →</a>
+        </div>
+
+      </article>
+    </main>
+
+    <aside class="sidebar sidebar-right">
+      <div class="sidebar-section">
+        <p class="sidebar-label">Stay in the Fight</p>
+        <p style="font-size:.83rem;margin-bottom:1rem;color:#3d3120;">No noise. No spam. Only the writing that matters.</p>
+        <form class="subscribe-form" action="#" method="post">
+          <input type="email" name="email" placeholder="your@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="subscribe-note">Join those who chose the harder path. Unsubscribe any time.</p>
+      </div>
+    </aside>
+
+    <footer>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+      <a href="/terms.html">Terms</a>
+    </footer>
+
+  </div>
+</body>
+</html>
