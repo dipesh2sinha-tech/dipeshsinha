@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://dipeshsinha.in/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://dipeshsinha.in/</loc>
+</url>
+<url>
+<loc>https://dipeshsinha.in/this-is-a-test-2.html</loc>
+<lastmod>2026-03-14T19:58:43+05:30</lastmod>
+<image:image>
+<image:loc>https://dipeshsinha.in/media/posts/15/Gemini_Generated_Image_juce1wjuce1wjuce-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://dipeshsinha.in/this-is-a-test.html</loc>
+<lastmod>2026-03-14T19:45:02+05:30</lastmod>
+<image:image>
+<image:loc>https://dipeshsinha.in/media/posts/14/Gemini_Generated_Image_juce1wjuce1wjuce-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+</urlset>
