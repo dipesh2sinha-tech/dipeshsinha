@@ -1,0 +1,43 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Anti-Modern Masculinity",
+    "description": "",
+    "home_page_url": "https://dipeshsinha.in",
+    "feed_url": "https://dipeshsinha.in/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Dipesh Sinha"
+    },
+    "items": [
+        {
+            "id": "https://dipeshsinha.in/this-is-a-test-2.html",
+            "url": "https://dipeshsinha.in/this-is-a-test-2.html",
+            "title": "EVRYTHING WILL BE FINE",
+            "summary": "Stoicism is an ancient Greek and then Roman philosophy of the Hellenistic&hellip;",
+            "content_html": "\n  <p>\n    Stoicism is an ancient Greek and then Roman philosophy of the Hellenistic and Roman Imperial periods. The Stoics believed that the universe operated according to reason, or logos, providing a unified account of the world, constructed from ideals of rational discourse, monistic physics, and naturalistic ethics.\n  </p>",
+            "image": "https://dipeshsinha.in/media/posts/15/Gemini_Generated_Image_juce1wjuce1wjuce-2.png",
+            "author": {
+                "name": "Dipesh Sinha"
+            },
+            "tags": [
+            ],
+            "date_published": "2026-03-14T19:57:28+05:30",
+            "date_modified": "2026-03-14T19:58:43+05:30"
+        },
+        {
+            "id": "https://dipeshsinha.in/this-is-a-test.html",
+            "url": "https://dipeshsinha.in/this-is-a-test.html",
+            "title": "this is a test",
+            "summary": "Stoicism is an ancient Greek and then Roman philosophy of the Hellenistic&hellip;",
+            "content_html": "\n  <p>\n    Stoicism is an ancient Greek and then Roman philosophy of the Hellenistic and Roman Imperial periods. The Stoics believed that the universe operated according to reason, or logos, providing a unified account of the world, constructed from ideals of rational discourse, monistic physics, and naturalistic ethics.\n  </p>",
+            "image": "https://dipeshsinha.in/media/posts/14/Gemini_Generated_Image_juce1wjuce1wjuce-2.png",
+            "author": {
+                "name": "Dipesh Sinha"
+            },
+            "tags": [
+            ],
+            "date_published": "2026-03-14T18:56:40+05:30",
+            "date_modified": "2026-03-14T19:45:02+05:30"
+        }
+    ]
+}
